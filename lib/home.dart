@@ -419,7 +419,6 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
         backgroundColor: Colors.amber[600],
         onPressed: () {},
         child: Icon(

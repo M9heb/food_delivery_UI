@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_app/food_description.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -187,163 +188,196 @@ class HomePage extends StatelessWidget {
             Column(
               spacing: 16,
               children: [
-                Container(
-                  padding: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(24))),
-                  child: Row(
-                    spacing: 12,
-                    children: [
-                      Image(
-                        width: 96,
-                        image: AssetImage("assets/images/dish1.png"),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => FoodDescription(),
                       ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Soba Soup",
-                              style: Theme.of(context).textTheme.labelLarge,
-                            ),
-                            Text(
-                              "No.1 in sales",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall
-                                  ?.copyWith(
-                                    color: Colors.amber[700],
-                                  ),
-                            ),
-                            Row(
-                              spacing: 2,
-                              children: [
-                                Text("\$",
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall),
-                                Text(
-                                  "12",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .titleMedium
-                                      ?.copyWith(
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                ),
-                              ],
-                            )
-                          ],
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(24))),
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Image(
+                          width: 96,
+                          image: AssetImage("assets/images/dish1.png"),
                         ),
-                      ),
-                      Icon(Icons.chevron_right),
-                    ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Soba Soup",
+                                style: Theme.of(context).textTheme.labelLarge,
+                              ),
+                              Text(
+                                "No.1 in sales",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodySmall
+                                    ?.copyWith(
+                                      color: Colors.amber[700],
+                                    ),
+                              ),
+                              Row(
+                                spacing: 2,
+                                children: [
+                                  Text("\$",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall),
+                                  Text(
+                                    "12",
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleMedium
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right),
+                      ],
+                    ),
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(24))),
-                  child: Row(
-                    spacing: 12,
-                    children: [
-                      Image(
-                        width: 96,
-                        image: AssetImage("assets/images/dish1.png"),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => FoodDescription(),
                       ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Soba Soup",
-                              style: Theme.of(context).textTheme.labelLarge,
-                            ),
-                            Text(
-                              "No.1 in sales",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall
-                                  ?.copyWith(
-                                    color: Colors.amber[700],
-                                  ),
-                            ),
-                            Row(
-                              spacing: 2,
-                              children: [
-                                Text("\$",
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall),
-                                Text(
-                                  "12",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .titleMedium
-                                      ?.copyWith(
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                ),
-                              ],
-                            )
-                          ],
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(24))),
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Image(
+                          width: 96,
+                          image: AssetImage("assets/images/dish1.png"),
                         ),
-                      ),
-                      Icon(Icons.chevron_right),
-                    ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Soba Soup",
+                                style: Theme.of(context).textTheme.labelLarge,
+                              ),
+                              Text(
+                                "No.1 in sales",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodySmall
+                                    ?.copyWith(
+                                      color: Colors.amber[700],
+                                    ),
+                              ),
+                              Row(
+                                spacing: 2,
+                                children: [
+                                  Text("\$",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall),
+                                  Text(
+                                    "12",
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleMedium
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right),
+                      ],
+                    ),
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(24))),
-                  child: Row(
-                    spacing: 12,
-                    children: [
-                      Image(
-                        width: 96,
-                        image: AssetImage("assets/images/dish1.png"),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => FoodDescription(),
                       ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Soba Soup",
-                              style: Theme.of(context).textTheme.labelLarge,
-                            ),
-                            Text(
-                              "No.1 in sales",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall
-                                  ?.copyWith(
-                                    color: Colors.amber[700],
-                                  ),
-                            ),
-                            Row(
-                              spacing: 2,
-                              children: [
-                                Text("\$",
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall),
-                                Text(
-                                  "12",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .titleMedium
-                                      ?.copyWith(
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                ),
-                              ],
-                            )
-                          ],
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(24))),
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Image(
+                          width: 96,
+                          image: AssetImage("assets/images/dish1.png"),
                         ),
-                      ),
-                      Icon(Icons.chevron_right),
-                    ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Soba Soup",
+                                style: Theme.of(context).textTheme.labelLarge,
+                              ),
+                              Text(
+                                "No.1 in sales",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodySmall
+                                    ?.copyWith(
+                                      color: Colors.amber[700],
+                                    ),
+                              ),
+                              Row(
+                                spacing: 2,
+                                children: [
+                                  Text("\$",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall),
+                                  Text(
+                                    "12",
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleMedium
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right),
+                      ],
+                    ),
                   ),
                 )
               ],
